@@ -34,4 +34,7 @@ public interface ClienteRepository extends JpaRepository<Cliente, Long> {
 
     @Query("select cl from Cliente cl where cl.primerApellido = ?1 OR cl.segundoApellido = ?1")
     public List<Cliente> consultarClientePorApellido(String apellido);
+
+    @Query("select cl.nombre from Cliente cl join TipoIdentificacion  t on ?1 = t.idTiid where cl.estado = 'A' order by cl.nombre ")
+    public List<Cliente> consultaEspecial(String Ididentificacion);
 }

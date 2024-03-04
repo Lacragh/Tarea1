@@ -15,4 +15,7 @@ public interface TipoDestinoRepository extends JpaRepository<TipoDestino, Long> 
 
     @Query("select tp from TipoDestino tp where tp.estado = ?1")
     public List<TipoDestino> consultarTipo(String estado);
+
+    @Query("select tp from TipoDestino tp where tp.nombre = ?1 order by tp.nombre")
+    public List<TipoDestino> consultarTipoDestinoOrdenados(String destino);
 }
