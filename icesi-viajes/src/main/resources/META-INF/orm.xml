@@ -11,12 +11,26 @@
                                 id_tide idtide,
                                 codigo codigo,
                                 nombre nombre,
-                                descripcion descripcion,
+                                descripcion descripcion
                                 from tipo_destino tide
                                 where tide.estado = :pEstado
 
                         </query>
                 </named-native-query>
         </entity>
+
+    <entity class="co.edu.icesi.viajes.icesiviajes.domain.TipoIdentificacion">
+        <named-native-query name="TipoIdentificacion.consultarTipoIdentificacionPorEstado" result-set-mapping="consultarTipoIdentificacionPorEstado">
+            <query>
+                select
+                id_tiid idtide,
+                codigo codigo,
+                nombre nombre
+                from tipo_identificacion tide
+                where tide.estado = :pEstado
+
+            </query>
+        </named-native-query>
+    </entity>
 </entity-mappings>
 
