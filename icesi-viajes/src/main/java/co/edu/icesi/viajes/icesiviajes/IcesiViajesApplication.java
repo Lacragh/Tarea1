@@ -27,8 +27,7 @@ public class IcesiViajesApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception{
-		consultarTipoDestinoPorEstado();
-		consultarTipoDestino();
+
 	}
 
 
