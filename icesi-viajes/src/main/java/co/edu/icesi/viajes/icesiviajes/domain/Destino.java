@@ -49,5 +49,24 @@ public class Destino {
     @Column(name = "id_tide", nullable = false)
     private int idTide;
 
+    public Destino(Long idDest, String codigo, String nombre, String descripcion, String tierra, String aire, String mar, Date fechaCreacion, Date fechaModificacion, String usuCreador, String usuModificador, String estado, int idTide) {
+        this.idDest = idDest;
+        this.codigo = codigo;
+        this.nombre = nombre;
+        this.descripcion = descripcion;
+        this.tierra = tierra;
+        this.aire = aire;
+        this.mar = mar;
+        this.fechaCreacion = fechaCreacion;
+        this.fechaModificacion = fechaModificacion;
+        this.usuCreador = usuCreador;
+        this.usuModificador = usuModificador;
+        this.estado = estado;
+        this.idTide = idTide;
+    }
+
+    public Destino(){
+
+    }
 }
 
