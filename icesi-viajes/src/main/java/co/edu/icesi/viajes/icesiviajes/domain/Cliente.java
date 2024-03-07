@@ -58,5 +58,38 @@ public class Cliente {
     @Column(name = "id_tiid", nullable = false)
     private int idTiid;
 
+    public Cliente(Long idClie, String numeroIdentificacion, String primerApellido, String segundoApellido, String nombre, String telefono1, String telefono2, String correo, String sexo, Date fechaNacimiento, Date fechaCreacion, Date fechaModificacion, String usuCreador, String usuModificador, String estado, int idTiid) {
+        this.idClie = idClie;
+        this.numeroIdentificacion = numeroIdentificacion;
+        this.primerApellido = primerApellido;
+        this.segundoApellido = segundoApellido;
+        this.nombre = nombre;
+        this.telefono1 = telefono1;
+        this.telefono2 = telefono2;
+        this.correo = correo;
+        this.sexo = sexo;
+        this.fechaNacimiento = fechaNacimiento;
+        this.fechaCreacion = fechaCreacion;
+        this.fechaModificacion = fechaModificacion;
+        this.usuCreador = usuCreador;
+        this.usuModificador = usuModificador;
+        this.estado = estado;
+        this.idTiid = idTiid;
+    }
+
+    public Cliente(){
+
+    }
+
+
+    @Override
+    public String toString() {
+        return "Cliente{" +
+                "idClie=" + idClie +
+                ", numeroIdentificacion='" + numeroIdentificacion + '\'' +
+                ", primerApellido='" + primerApellido + '\'' +
+                ", nombre='" + nombre + '\'' +
+                '}';
+    }
 }
 
