@@ -140,7 +140,10 @@ class ClienteTest {
 
     @Test
     void debeRetornarPorTipoDeID(){
-
+        List<Cliente> clientes = clienteRepository.consultaEspecial("1");
+        for (Cliente cliente : clientes){
+            System.out.println(cliente.toString());
+        }
     }
 
 

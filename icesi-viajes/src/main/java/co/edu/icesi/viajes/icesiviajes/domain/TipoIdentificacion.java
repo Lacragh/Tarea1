@@ -34,5 +34,19 @@ public class TipoIdentificacion {
     @Column(name = "estado", nullable = false, length = 1)
     private String estado;
 
+    public TipoIdentificacion(Long idTiid, String codigo, String nombre, Date fechaCreacion, Date fechaModificacion, String usuCreador, String usuModificador, String estado) {
+        this.idTiid = idTiid;
+        this.codigo = codigo;
+        this.nombre = nombre;
+        this.fechaCreacion = fechaCreacion;
+        this.fechaModificacion = fechaModificacion;
+        this.usuCreador = usuCreador;
+        this.usuModificador = usuModificador;
+        this.estado = estado;
+    }
+
+    public TipoIdentificacion(){
+        
+    }
 }
 

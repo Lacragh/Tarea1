@@ -47,6 +47,6 @@ public interface ClienteRepository extends JpaRepository<Cliente, Long> {
 
 
     //Consulta $14
-    @Query("select cl.nombre from Cliente cl join TipoIdentificacion  t on ?1 = t.idTiid where cl.estado = 'A' order by cl.nombre ")
+    @Query("select cl from Cliente cl join TipoIdentificacion  t on ?1 = t.idTiid where cl.estado = 'A' order by cl.nombre ")
     public List<Cliente> consultaEspecial(String Ididentificacion);
 }

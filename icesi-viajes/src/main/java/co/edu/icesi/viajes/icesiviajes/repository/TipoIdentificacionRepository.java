@@ -14,5 +14,5 @@ public interface TipoIdentificacionRepository extends JpaRepository<TipoIdentifi
 
     //Consulta #7
     @Query("select ti from TipoIdentificacion ti where ti.codigo = ?1 AND ti.estado = ?2")
-    public List<TipoIdentificacion> consultarTipoIdentificacionPorEstado(String codigo, String estado);
+    public List<TipoIdentificacion> consultarTipoIdentificacionPorEstadoCodigo(String codigo, String estado);
 }
