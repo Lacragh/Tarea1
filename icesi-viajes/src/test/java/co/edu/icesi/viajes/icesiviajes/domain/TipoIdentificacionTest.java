@@ -60,6 +60,8 @@ class TipoIdentificacionTest {
         tipoIdentificacionService.save(tipoIdentificacion2);
         tipoIdentificacionService.save(tipoIdentificacion3);
     }
+
+    //Consulta #1
     @Test
     void consultarTipoIdentificacionPorEstado() throws Exception{
         setup();

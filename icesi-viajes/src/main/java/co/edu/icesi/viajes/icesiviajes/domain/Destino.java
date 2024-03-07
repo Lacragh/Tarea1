@@ -11,24 +11,24 @@ public class Destino {
 
     @Id
     @Column(name = "id_dest", nullable = false)
-    private Long idDest;
+    private int idDest;
 
-    @Column(name = "codigo", nullable = false, length = 5)
+    @Column(name = "codigo", nullable = false)
     private String codigo;
 
-    @Column(name = "nombre", nullable = false, length = 100)
+    @Column(name = "nombre", nullable = false)
     private String nombre;
 
-    @Column(name = "descripcion", nullable = false, length = 300)
+    @Column(name = "descripcion", nullable = false)
     private String descripcion;
 
-    @Column(name = "tierra", nullable = false, length = 1)
+    @Column(name = "tierra", nullable = false)
     private String tierra;
 
-    @Column(name = "aire", nullable = false, length = 1)
+    @Column(name = "aire", nullable = false)
     private String aire;
 
-    @Column(name = "mar", nullable = false, length = 1)
+    @Column(name = "mar", nullable = false)
     private String mar;
 
     @Column(name = "fecha_creacion", nullable = false)
@@ -37,19 +37,19 @@ public class Destino {
     @Column(name = "fecha_modificacion")
     private Date fechaModificacion;
 
-    @Column(name = "usu_creador", nullable = false, length = 10)
+    @Column(name = "usu_creador", nullable = false)
     private String usuCreador;
 
-    @Column(name = "usu_modificador", length = 10)
+    @Column(name = "usu_modificador")
     private String usuModificador;
 
-    @Column(name = "estado", nullable = false, length = 1)
+    @Column(name = "estado", nullable = false)
     private String estado;
 
     @Column(name = "id_tide", nullable = false)
     private int idTide;
 
-    public Destino(Long idDest, String codigo, String nombre, String descripcion, String tierra, String aire, String mar, Date fechaCreacion, Date fechaModificacion, String usuCreador, String usuModificador, String estado, int idTide) {
+    public Destino(int idDest, String codigo, String nombre, String descripcion, String tierra, String aire, String mar, Date fechaCreacion, Date fechaModificacion, String usuCreador, String usuModificador, String estado, int idTide) {
         this.idDest = idDest;
         this.codigo = codigo;
         this.nombre = nombre;
